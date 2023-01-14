@@ -1,0 +1,160 @@
+1. <!DOCTYPE html> tells us the type of document which is HTML and the version of HTML
+2. Head --> meta tags(provide extra info(metadata) of website), links, style --> which user cannot see.
+3. Body --> visible to user
+4. attributes --> additional information of a tag
+5. metadata --> specifies metadata of a website
+6. Heading tags --> h1,h2,h3..h6
+7. www.zomato.com --> base url
+    food --> end point
+    when the domain name changes it is external link, nd the opposite.
+8. target in a tag is for making sure ki alag se tab khulega ya nahi.. agar "self" hai to usi mein
+    , "blank" hai to alag se
+9. lists
+    unordered 
+        4 types --> circle, disc(default), none, square
+    ordered
+        start krna ho kisi aur number ya digit se to ' start="" ' krke likhdo
+        type mention krna ho ki letter hai ya number to 'type=""' krke likhdo
+10. div and span
+    div --> used to create divisions
+        block elements (p tag, h1 tags)
+        creates blocks
+
+        how to add image in background div?
+            background: url()  krke
+    span --> used to create divisions
+        inline elements (img tags)
+        helps to make changes in single line of anything
+
+11. Semantic tags:
+    Semantic elements are the elements which are self explanatory
+    header, footer, nav, section, main, form, table, article
+
+    Non Semantic tags:
+    <p> tag: kisiko nahi pta na ki ye ek paragraph
+
+12. nav tag --> navigation only
+13. header mein aapka nav and baaki ke chise bhi aati ha..
+14. section --> creating sections
+        as such diff nahi hota.. div and section mein bas div non semantic hai aur section semantic hai
+15. article --> almost same hi Heading
+16. aside --> aside from the page content
+17. Media tags
+        Audio tag
+            <audio controls src=""></audio>
+            here "controls" is important varna play nahi hoga
+        Video tag
+            <video controls src=""></video>
+            <source> jab autoplay karna ho to aise source krke nikalo video
+            autoplay
+            muted
+            loop
+            poster --> thumbnail agar lagane ho to
+18. CSS
+--> inline --> <p style="color: brown;">This is a text</p>
+--> internal --> when you have to write a lot of css in html only no css fiel
+    <style> ye jo style hai ye head ya body kahin bhi aaskta hai
+        selector {
+            property:value;
+        }
+    </style>
+--> external --> create external file and link it with "link" tag.
+
+19. way to add one css to another 
+    @import url() krke
+
+20. order of types of css
+--> inline >> internal >> external
+--> agar head mein style niche hoga to vo internal ko lega varna external ko
+--> inline sabse last hai to automatically it will be on high priorty.
+
+21. CASCADING --> overiding of styles
+//If I have multiple things to group I can use class//
+
+
+22. CSS Selectors Types
+-> simple
+    1)* : universal Selectors --> selects all the thing in html
+    2) .class_name : class selctors --> jab kuch group krna ho for css'ing.
+    3) p : tag selector --> targeting any specific tag
+    4) #id_name: id selector --> unique 
+
+
+-> combinator
+    --> they are made using combination of 2 Selectors
+    --> they clarify relationship between 2 selectors 
+    1) general sibling ~
+    ex- "div~p" --> all the p tags which are siblings of all div tag
+    2) adjacent sibling +
+        ex- "div+p" --> all the p tags which are adjacent of all div tag
+    3) child >
+        target all the tags which are children
+        ex- "div>p" --> all the p tags which are children of div tag
+    4 descendant "space" 
+        ex- I am descendant of my father.
+        used to target the descendant element of a particular element
+        ex how to use: "div p" --> all the p tag which are inside the div
+
+
+-> pseudo-class --> single colon
+    temporary states of elements
+    //////////////////////////////////////////////////////
+    :hover --> when you hover over anything
+    :active --> when you click on any link, this only happens in "a" tag.
+    :link --> not visited links
+    :visited --> visited links
+
+
+-> pseudo-element
+    specific parts of element
+    here "." will not come while mentioning in 
+    //////////////////////////////////////////////////////
+    ::first-line
+    ::before
+    ::after
+    ::first-letter
+    ::marker
+
+
+<!-- FORM: -->
+-> attribute 
+    action --> where the data needs to be sent when form is submitted
+    method --> http method to be used to submit the data
+
+--> tag
+    label --> for writing heading type tumhare label jaise
+        for --> kis ke lie hai ye vo specify krne ke lie
+    input --> for taking input
+        type --> type of input mention krne ke lie
+            button
+            checkbox
+            color
+            datetime-local
+            date
+            email
+            month
+            number
+            password
+            text 
+            radio 
+            range 
+            submit 
+            file 
+            reset 
+        name --> backend mein mention krne ke lie name
+        placeholder --> ek hint type text ke lie
+        value --> default value ke lie
+        ///////// jab multiple checkbox usne krne ho tab dhyan rakhna ki "name" attribute alag hona chahiye saare checkbox ka
+        ///////// jab single choose wala ho to "name" same rhega
+        readonly --> default value but cant be changed 
+        disabled --> input field is disabled // only for submit
+    select --> drop down ke lie
+    option --> options of drop down
+        isme "value" attribute is important
+
+
+
+
+
+
+

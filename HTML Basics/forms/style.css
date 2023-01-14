@@ -1,0 +1,48 @@
+body{
+    font-family: 'Inter', sans-serif;
+}
+.form-control{
+    width:15%;
+    height: 28px;
+    box-shadow:rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: none;
+    border-radius: 4px;
+    background-color: white;
+    
+}
+.form-control:focus,select:focus{
+    outline: none;
+    
+}
+select{
+    font-family: 'Inter', sans-serif;
+    width:20%;
+    height: 30px;
+    box-shadow:rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: none;
+    border-radius: 4px;
+}
+.title{
+    font-size: 15px;
+    font-weight: 900px;
+    margin-bottom: 3px;
+    margin-top: 13px;
+    
+}
+.form-fields{
+
+}
+input[type="text"], input[type="number"], input[type="date"], input[type="email"],input[type="tel"], input[type="month"]{
+    font-family: 'Inter', sans-serif;
+    padding: 0px 14px;
+}
+.btn{
+    margin-top: 15px;;
+    width: 18%;
+    height: 30px;
+    margin-right: 0px 15px;
+    background-color: pink;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+}
