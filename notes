@@ -148,13 +148,113 @@
         ///////// jab single choose wala ho to "name" same rhega
         readonly --> default value but cant be changed 
         disabled --> input field is disabled // only for submit
+        size --> size of the visible width adjust hogi, and jitne character likhoge utna characters visible hogi
+        maxlength --> max characters allowed to input in an input field
+        pattern --> specifies a regular expression [[regex]]
+        minlength --> min characterss allowed to input in an input field
+        min and max --> min and max values for an input field
+        required --> to make an input required
+    
     select --> drop down ke lie
     option --> options of drop down
         isme "value" attribute is important
+//////////cdn-content delivery network////////////
+
+23. CSS Box Model
+all html elements are boxes
+--> CSS box model is a box that wraps around every HTML element.
+--> consist of 4 parts:
+    -> content
+    -> padding
+    -> border
+    -> margin
+
+CASCADING
+an algorithm for solving the conflicts when multiple css rules are applied to an HTML element
+
+the 4 stages in cascade algorithm are:
+    1. position and order of appearance
+    2. specificity
+        the selector aving higher score, has more priority
+
+        specificity scoring:
+            universal --> 0
+            pseudo-element and tag selector --> 1
+            class, pseudo-class and attribute --> 10
+            id selector --> 100;
+            inline --> 1000;
+            important --> 10000;
+
+    3. origin (lower the highest)
+        user agent
+        local agent
+        authored
+        authored  ! important
+        local user styles !important 
+        user agent! important
+
+    4. importance
+
+/////////question/////////
+
+li = 1
+.lorem = 10
+a:link - tag + pseudo-class - 1+10 = 11
+ul ol+li - tag + tag + tag = 1+1+1 = 3
+style=" " = 1000
+p{
+    font size: 16px !important;
+} = 10000
+ul ol li.red = tag + tag + tag + class = 13
+article > section = tag + tag = 2
+article.dark.card = tag + class + class = 21
+article:hover a[href] = tag + pseudo-class + attribute  21
+li#speciality section:dark = tag + id + tag + class = 112
+
+////////table/////////
+Create a table with 3 columns and 4 rows
+tr --> table rows
+td --> table data
+th --> table head
+attribute
+    colspan --> merge columns
+    rowspan --> merge rows
 
 
+//////////css/////////
+    border-collapse:collapse;
+        helps us to remove double border
+    :nth child - pseudo-class hai iske bracket mein aap kuch likh kr kr skte ho..
 
 
+///////////CSS POSITIONS///////////
+1. Static: The original position of an element
+2. Relative: Element is positioned relative to its normal/original position, just that here we can move the element by adding offset values. Element stays in normal document flow.
+3. Absolute: Element is positioned relative to its parent. If parent is not present then element is positioned relative to the main document. Element is remove from the normal document flow, no space is created for that element.
+4. Fixed: Element is positioned relative to the viewport. Element does not move and stays in the same posiiton even on scrolling. Element is removed from normal flow.
+5. Sticky: Element is posiitoned according to the normal document flow. Till the element hits the top, it has normal position , after it touched the top then it becomes fixed.
 
+///////////CSS Flexbox///////////
+1. display: flex;
+    brings everything to a row
+2. flex-direction: row, column, row-reverse, col-reverse
+3. flex-wrap: nowrap, wrap, wrap-reverse
+4. flex-flow: combination of flex-direction and flex wrap. First the flex direction comes then flex wrap.
+5. justify-content: align elements with respect to your x axis.
+--> values: flex-start, flex-end, start, end, center, space-between, space-around, space-evenly
+6. align-items: align elements with respect to y axis.
+--> value: stretch( will stretch it all along downside)
+        : flex-start
+        : flex-end
+        : center
+7. align-content: aligns element with respect to y axis, it only works when you have multiple line items, and when flex wrap is wrap or wrap-reverse.
+--> values are same as align-items.
 
+////gaps/////
+row and column gaps are also there..
+
+//////////////////
+display: block, inline, inline-block
+block --> converts the element in block
+inline --> converts the element in inline
 

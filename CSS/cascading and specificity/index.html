@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cascading and Specificity</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .para{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cascading and Specificity</h1>
+    <ol>
+        <li>Position and Order of Appearence: The browser applies the styles appearing at the end.</li>
+        <li>Origin: 
+            <ul>
+                <li>User agent styles: The styles applied by browser to your html element by default.</li>
+                <li>Local user styles: The styles which are applied by OS.</li>
+                <li>Authored Styles: The CSS files that you have written.</li>
+                <li>Authored CSS! important</li>
+                <li>Local User Styles !important</li>
+                <li>User Agent Styles !important</li>
+            
+            </ul>
+        </li>
+        <li>Specificity: The algo which tells which selector has more priority based on specificity score</li>
+        <li>Importand: Highest Priority</li>
+    </ol>
+    <p class="para" id="id-para" style="color: pink;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, vitae. Similique, architecto inventore recusandae autem vitae tempore alias commodi. Ea, recusandae asperiores blanditiis quisquam eveniet nemo ratione illum ipsam expedita?</p>
+    <a href="#">Link</a>
+    <style>
+        #id-para{
+            color:aquamarine;
+        }
+    </style>
+</body>
+</html>
