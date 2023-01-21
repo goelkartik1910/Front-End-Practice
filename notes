@@ -258,4 +258,30 @@ display: block, inline, inline-block
 block --> converts the element in block
 inline --> converts the element in inline
 
-hi
+/////////////////////
+Grid
+grid-template-cloumn
+    defines how many columns are there >> auto auto >> means like 2 columns
+grid-template-row
+    defines how many rows will be there or height of it.
+align-self
+    positioning along y axis
+justify-self
+    positioning along x axis
+grid-column-start
+    these are helpful if we want any particular cell to be in mergeing
+grid-column-end
+these are helpful if we want any particular cell to be in mergeing
+grid-column
+    just use a " / " and you can use start and end
+    "span" helps ki hum use bolde 2,1,3 cells mein fail jao
+    we can force also any element to be anywhere specifically 
+
+///////////////////////////
+border-sizing
+    border-box
+        ?????????????    
+    boder-content
+        helps to not change the size of anything even the border is applied
+iframe
+    webpage inside another webpage

@@ -1,0 +1,29 @@
+.grid-container{
+    display: grid;
+    border: 2px solid blue;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr;
+    /* height: 500px;
+    align-items: center;
+    justify-items: center; */
+}
+
+.grid-item{
+    background-color: tomato;
+    margin: 1px;
+    padding: 20px;
+}
+
+/* .item4{
+    background-color: blue;
+    width:20px;
+    height:20px;
+    
+} */
+
+.item2{
+    /* grid-column-start: 2;
+    grid-column-end: 4; */
+    /* grid-column: 2 / 4; */
+    grid-column: span 2;
+}
