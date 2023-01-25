@@ -1,0 +1,23 @@
+.container{
+    padding: 20px;
+    background-color: orange;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.item{
+    background-color: white;
+    padding: 30px;
+}
+
+.item3{
+    grid-column: 1 / -1;
+}
+
+@media (max-width: 800px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+}

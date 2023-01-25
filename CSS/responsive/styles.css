@@ -1,0 +1,47 @@
+/* 
+    device width > 100px make color of text is blue
+    else make it red 
+*/
+
+/* 
+@media(type of device) also (some expressions){
+    regular css code
+} */
+div{
+    font-size: 100px;;
+}
+@media screen {
+    div{
+        color: red;
+    }
+}
+
+@media print {
+    div{
+        color: blue;
+    }
+}
+
+@media all and (min-width: 100px){
+    div{
+        color:red;
+    }
+}
+
+/* @media (max-width: 400px){
+    div{
+        color: yellow;
+    }
+} */
+
+@media (orientation: landscape){
+    div{
+        color: red;
+    }
+}
+
+@media (orientation: portrait){
+    div{
+        color: blue;
+    }
+}
