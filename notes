@@ -234,6 +234,9 @@ attribute
 4. Fixed: Element is positioned relative to the viewport. Element does not move and stays in the same posiiton even on scrolling. Element is removed from normal flow.
 5. Sticky: Element is posiitoned according to the normal document flow. Till the element hits the top, it has normal position , after it touched the top then it becomes fixed.
 
+if we give 3 elements position: absolute, they will come on each other.
+
+
 ///////////CSS Flexbox///////////
 1. display: flex;
     brings everything to a row
@@ -350,3 +353,5 @@ display none and make it important
 
 this means when the screen size is 500px minimum width then font size will be 20px
 //////////////////////////////
+Z-Index
+we can apply this property when position is non-static

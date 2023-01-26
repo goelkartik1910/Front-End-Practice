@@ -1,0 +1,39 @@
+.media::before{
+    content: 'XS';
+    display: block;
+    font-size: 40px;
+}
+
+.test{
+    background-color: #563D7C;
+    height: 50px;
+    border: 2px solid whitesmoke;
+    color: whitesmoke;
+}
+
+@media (min-width: 576px){
+    .media::before{
+        content: 'SM';
+    }
+}
+
+@media (min-width: 768px){
+    .media::before{
+        content: 'MD';
+    }
+}
+@media (min-width: 992px){
+    .media::before{
+        content: 'LG';
+    }
+}
+@media (min-width: 1200px){
+    .media::before{
+        content: 'XL';
+    }
+}
+@media (min-width: 1400px){
+    .media::before{
+        content: 'XXL';
+    }
+}

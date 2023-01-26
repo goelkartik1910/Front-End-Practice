@@ -1,0 +1,24 @@
+.test{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    font-size: 30px;
+    color:white;
+    position: absolute;
+    border-radius: 6px;
+}
+
+.test1{
+    z-index:0;
+}
+
+.test2{
+    background-color: green;
+    left:50px;
+    z-index:2;
+}
+
+.test3{
+    background-color: tomato;
+    left:100px;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstap</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Bootstarp CDN Tags -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- Bootstrap CDN END -->
+</head>
+<body>
+    <div class="media"></div>
+    <h1>Container</h1>
+    <div class="container-fluid">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ab obcaecati eveniet consequuntur assumenda ipsum voluptates tenetur dolores accusamus, optio impedit ad ut minima similique nemo exercitationem quis asperiores aspernatur.</div>
+    <h1>Grid Bootstraps</h1>
+    <div class="container border border-5 border-info">
+        <div class="row justify-content-around">
+            <div class="col-lg-3 test">1</div>
+            <div class="col-lg-6 test">2</div>
+            <div class="col-3 test">3</div>
+        </div>
+    </div>
+    <h1>Buttons</h1>
+    <div class="container">
+        <button class="btn btn-danger">Submit</button>
+        <button class="btn btn-info">Info</button>
+        <button class="btn btn-primary">Primary</button>
+        <button class="btn btn-warning">Warning</button>
+        <button class="btn btn-dark">Dark</button>
+        <button class="btn btn-light">Light</button>
+        <button class="btn btn-outline-dark">Outlined</button>
+        <button class="btn btn-block">Block</button>
+        <br>
+        <div class="btn-group my-5">
+            <button class="btn btn-danger">danger</button>
+            <button class="btn btn-info">info</button>
+        </div>
+    </div>
+    <h1>Texts</h1>
+    <span class="text-muted">Some Muted Text</span>
+    <span class="text-danger">Danger Text</span>
+    <h1>Forms</h1>
+    <div class="container my-5 border border-4 border-primary py-5">
+        <div class="row">
+            <form class="col-8 offset-2">
+                    <div class="form-group">
+                        <label for="username" 
+                        class="form-label">Username</label>
+
+                        <input type="text" 
+                        id="username" 
+                        class="form-control is-valid">
+                        <small class="form-text">Username is valid</small>
+                    </div>
+
+                    <div class="input-group">
+                        <button class="btn btn-danger">-</button>
+                        <input type="text" class="form-control">
+                        <input type="text" class="form-control">
+                        <button class="btn btn-primary">+</button>
+                    </div>
+            </form>
+        </div>
+    </div>
+    <h1>Cards</h1>
+    <div class="container my-5">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">Header of the Card
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title">Title</h1>
+                        <h5 class="card-subtitle">Subtitle</h5>
+                    </div>
+                    <div class="card-footer">This is footer
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">Header of the Card
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title">Title</h1>
+                        <h5 class="card-subtitle">Subtitle</h5>
+                    </div>
+                    <div class="card-footer">This is footer
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
