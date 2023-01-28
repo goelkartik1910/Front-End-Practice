@@ -1,0 +1,47 @@
+.container{
+    background-color: #7F7F7F;
+    position:fixed;
+    top:0;
+    left:0;
+    bottom: 0;
+    right:0;
+    opacity: 0.4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup{
+    padding: 40px;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-flow: column wrap;
+    height: 100px;
+    gap: 10px;
+}
+
+.popup > input{
+    border: none;
+    background-color: #e7e7e7;
+    padding: 5px;
+    color: black;
+}
+.popup > input:focus{
+    border: none;
+}
+.popup > button{
+    border: none;
+    background-color: lightblue;
+    padding: 5px;
+    color: black;
+}
+.popup > button:hover{
+    background-color:blue;
+    color:white;
+}
+@media(min-width: 800px) {
+    .container{
+        display: none;
+    }
+}
