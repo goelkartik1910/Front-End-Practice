@@ -1,0 +1,43 @@
+<div class="container">
+  <div class="dot dot-1"></div>
+  <div class="i">I</div>
+  <div class="dot dot-2"></div>
+</div>
+<style>
+  .dot{
+    width:30px;
+    height:30px;
+    border-radius: 15px;
+    background-color: #FADE8B;
+  }
+  .dot-1{
+    position: absolute;
+    top:70;
+    left: 260px;
+  }
+  .dot-2{
+    position: absolute;
+    bottom:70;
+    right: 260px;
+  }
+  .i{
+    font-size:249px;
+    position:absolute;
+    top:1;
+    left: 135px;
+    color: #FADE8B;
+    font-weight: bold;
+    font-family: Andale Mono, AndaleMono, monospace
+  }
+  body{
+    background-color: #E3516E;
+  }
+</style>
+
+<!-- OBJECTIVE -->
+<!-- Write HTML/CSS in this editor and replicate the given target image in the least code possible. What you write here, renders as it is -->
+
+<!-- SCORING -->
+<!-- The score is calculated based on the number of characters you use (this comment included :P) and how close you replicate the image. Read the FAQS (https://cssbattle.dev/faqs) for more info. -->
+
+<!-- IMPORTANT: remove the comments before submitting -->
