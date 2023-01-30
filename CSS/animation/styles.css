@@ -1,0 +1,42 @@
+.container{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    /* transition-property:width, border-radius;  works only in hover
+    transition-duration: 2s;
+    transition-delay: 3s; 
+    */
+    animation-name: jadoo;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-direction: reverse;
+
+}
+/* 
+.container:hover{
+    width:200px;
+    height: 200px;
+    border-radius: 50%;
+} */
+
+@keyframes jadoo {
+    from {
+        top:0;
+        left:0;
+    }
+    to {
+        top:0px;
+        left:500px;
+    }
+
+    /* OR
+    0%{
+    }
+    
+    10%{
+    }
+
+
+    */
+}

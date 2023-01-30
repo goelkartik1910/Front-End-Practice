@@ -1,0 +1,85 @@
+How to use javascript in html?
+1. In-line --> Just use <script></script> tags in body.
+2. Link external file. <script src=""></script>
+
+--> Whatever interacts can be done by Javascript.
+--> adding timer.
+--> dynamically add and remove html elements.
+--> Semicolon is not mandatory in JS.
+--> OOPS Based
+
+Basic Commands
+1. console.log() --> to print anything
+2. prompt() --> to take input and show a message.
+
+Variables
+1. let --> 
+example
+    let number = 22;
+
+Operators
+1. Unary: which have only 1 operand
+    ++, --
+2. Binary: which have only 2 operand
+    a) Airthmatic Operators
+        +, -, /, *, %, **
+    b) Comparison Operators
+        ==, !=, >, <, >=, <=, ===
+    c) Logical Operators
+        &&, ||, !
+    4) Bitwise Operators
+        &(AND), |(OR), ^(XOR), <<(LEFT SHIFT), >>(RIGHT SHIFT)
+    5) Assignement Operator
+        =, +=, -+, *=, **=, /=, %=
+3. Ternary
+
+"abc" + "xyz" --> abcxyz
+"abc" + "xyz" --> abcxyz
+`abc` + 'xyz' --> abcxyz
+20 + "abc" --> 20abc // it will treat 20 as an another strings
+true + "abc" --> trueabc // it will treat true as an another strings
+true + 20 --> 21 // as true --> 1 and false --> 0
+true + true --> 2 // again the same thing
+
+'' && 10 -->
+true && 'abc' --> if 1st is true then it will check what is next and print it
+false && anything --> false
+undefined && anything --> undefined
+false || anything --> anything
+true || anything --> true
+'' || anything --> anything
+!anything --> false
+!'' --> true
+!0 --> true
+
+Conclusion
+1. If one operand is string then it will make it strings
+2. If there is no string then it will be number.
+3. Comparison operators do not compare data types, they compare data.
+
+What can be the opperands for a comparison operators? 
+ans: any data type
+What is the result of the comparison operators?
+ans: boolean value
+
+Datatypes:
+1. undefined
+2. number
+3. string
+4. boolean
+
+Typecasting
+1. Number to boolean --> Boolean() 
+    Only number 0 will false, remaining all are true.
+2. Strings to boolean --> Boolean()
+    Empty string -> false, remaining all are true.
+3. Number to strings --> String()
+    number becomes string
+4. Boolean to Strings --> String()
+    remains same but as string
+5. undefined to Strings --> String()
+    remains NAN
+6. bool to number --> Number()
+    true is 1 and false is 0
+
+If you want to know any typw of datatype then use --> typeof()
