@@ -7,10 +7,21 @@ How to use javascript in html?
 --> dynamically add and remove html elements.
 --> Semicolon is not mandatory in JS.
 --> OOPS Based
+--> Scripting Language: Made for Client-Side execution
+--> Interpreted Language: Runs Line by Line
+--> Case Sensitive
+--> Loosely/Dynamic typed Language
+    let age = "18"; (no need of datatype)
+
+Client ------------> (requests)Server
+Client <------------ (response)Server
+FrontEnd              BackEnd
 
 Basic Commands
 1. console.log() --> to print anything
 2. prompt() --> to take input and show a message.
+3. alert() --> gives alert
+4. confirm() --> asks yes or no.
 
 Variables
 1. let --> 
@@ -81,5 +92,12 @@ Typecasting
     remains NAN
 6. bool to number --> Number()
     true is 1 and false is 0
+7. String to Integer --> parseInt()
 
 If you want to know any typw of datatype then use --> typeof()
+
+if(){
+
+}else{
+
+}
