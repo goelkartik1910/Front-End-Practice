@@ -10,6 +10,7 @@ How to use javascript in html?
 --> Scripting Language: Made for Client-Side execution
 --> Interpreted Language: Runs Line by Line
 --> Case Sensitive
+--> Synchronous Language: Complete one task and then move to next task.
 --> Loosely/Dynamic typed Language
     let age = "18"; (no need of datatype)
 
@@ -101,3 +102,5 @@ if(){
 }else{
 
 }
+
+What is var, const and let? What is difference between them?
