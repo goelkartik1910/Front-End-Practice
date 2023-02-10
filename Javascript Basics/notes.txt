@@ -104,3 +104,60 @@ if(){
 }
 
 What is var, const and let? What is difference between them?
+Hoisting: it moves the function, variable and class value to the top of their scope.
+undefined: Variable declaration is there but not Assignement
+not defined: variable declaration is not there
+
+
+var: 
+    can redeclare and can reinitialize
+let: 
+    cannot redeclare and can reinitialize
+    present in some another space than global
+    in script memory you cannot access a variable until its initalized a value
+    TDZ(temporal Dead Zone) : period of time when let and const declarations cannot be accesed.
+const:
+    cannot redeclare and cannot reinitialize
+    present in some another space than global
+
+What are functions?
+Pure --> take input and give some fixed output
+     --> no side effct in outside world
+    example:
+    function add(a,b){
+        console.log(a*b);
+    }
+
+Impure --> can have different outputs
+       --> causes side effect on outside world
+    example: 
+    const a = 42;
+    function getVal(b){
+        a + b;
+    }
+
+FUNCTION BODY-->
+    function funct_name(){
+
+    }
+
+FUNCTION CALLING-->
+    funct_name();
+
+FUNCTION EXPRESSION-->
+    they are functions which are store in variables
+    let func = function(){ //anynoymus function --> functions with no name
+        console.log("func declaration")
+    }
+
+Arrow Function-->
+    for example you want to write this function
+
+    function printName(){
+        console.log("name: ", "Kartik Goel")
+    }
+
+    let printName = () => {
+        console.log("name: ", "Kartik Goel")
+    }
+    printName();

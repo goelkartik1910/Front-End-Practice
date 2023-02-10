@@ -9,6 +9,8 @@ console.log(a);
 
 // Can we do this?
 
-console.log(b);
+console.log(b); // will print --> undefined
 var b = 12;
 console.log(b);
+
+// Now, the question is why it is ""undefined""

@@ -1,0 +1,41 @@
+1. There is a "window" in which we have:
+    1. DOM
+        Doument
+    2. BOM
+        Navigator
+        Screen
+        Location
+        Frames
+        History
+        httpsrequests
+
+2. DOM views an HTML document as a tree of nodes
+3. Node Types
+    Element Node
+    Attribute Node
+    Text Node
+4. DOM is used to manipulate elements in your html documnent
+    Create
+    Change/Modify
+    Remove
+    Get
+        any element on your document
+
+//// Various Ways to select element in document
+1. getElementbyId()
+    uses id which you passed
+
+    let title = document.getElementById("title")
+    console.log(title.innerText);
+
+    title.innerText = "Chnaging DOM"
+    console.log(title.innerText);
+2. querySelector()
+    gets all the element with the specified selector
+
+    let listItem = document.querySelector("li");
+    console.log(listItem);
+
+    let listItem = document.querySelector(".item"); // if you want to pick using class
+    console.log(listItem);
+3. querySelectorAll()
