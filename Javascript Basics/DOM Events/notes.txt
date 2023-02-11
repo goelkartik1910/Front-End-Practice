@@ -1,0 +1,14 @@
+DOM Events--->
+
+1. onClick
+2. ondoubleCLick
+3. onLoad
+4. onunload
+5. onchange
+6. onmouseover
+7. onmouseout
+8. onfocus
+
+///// addEventListener(): Attaches an event handler to the  specified element.
+
+    element.addEventListener(event, function, useCapture)

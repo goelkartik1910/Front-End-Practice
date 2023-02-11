@@ -1,7 +1,7 @@
 let title = document.getElementById("title")
 console.log(title.innerText);
 
-title.innerText = "Chnaging DOM"
+title.innerText = "Changing DOM"
 console.log(title.innerText);
 
 let listItem = document.querySelector("li");
@@ -20,3 +20,20 @@ li.forEach(item => {
     item.innerText = "Items"
 })
 
+// adding new items
+let divEle = document.getElementsByTagName("div")[0];
+console.log(divEle);
+let orderedList = document.createElement("ol");
+let li1 = document.createElement("li");
+li1.textContent = "Apple";
+let li2 = document.createElement("li");
+li2.textContent = "Mango";
+orderedList.appendChild(li1);
+orderedList.appendChild(li2);
+console.log(orderedList);
+
+divEle.appendChild(orderedList);
+
+// removing items from a list
+
+divEle.remove();

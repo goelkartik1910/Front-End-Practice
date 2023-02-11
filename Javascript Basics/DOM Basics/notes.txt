@@ -30,6 +30,8 @@
 
     title.innerText = "Chnaging DOM"
     console.log(title.innerText);
+
+    
 2. querySelector()
     gets all the element with the specified selector
 
@@ -38,4 +40,34 @@
 
     let listItem = document.querySelector(".item"); // if you want to pick using class
     console.log(listItem);
+
+
 3. querySelectorAll()
+    let li = document.querySelectorAll("li");
+    li.forEach(item => {
+        item.innerText = "Items"
+    })
+
+
+////// Adding New Elements to document
+
+1. createElement() : to add new element to DOM tree
+
+    let divEle = document.getElementsByTagName("div")[0];
+    console.log(divEle);
+    let orderedList = document.createElement("ol");
+    let li1 = document.createElement("li");
+    li1.textContent = "Apple";
+    let li2 = document.createElement("li");
+    li2.textContent = "Mango";
+    orderedList.appendChild(li1);
+    orderedList.appendChild(li2);
+    console.log(orderedList);
+
+    divEle.appendChild(orderedList);
+
+////// Removing Elements to document
+
+1. remove(): Remove
+    
+    divEle.remove();
