@@ -120,6 +120,11 @@ const:
     cannot redeclare and cannot reinitialize
     present in some another space than global
 
+Scope:
+    1. var --> has global scope
+        even if we dont write var it will work. 
+    2. let --> has local scope
+
 What are functions?
 Pure --> take input and give some fixed output
      --> no side effct in outside world
@@ -161,3 +166,23 @@ Arrow Function-->
         console.log("name: ", "Kartik Goel")
     }
     printName();
+
+
+/////////////////while loop
+/////// print 1 to 100.
+var start = 1;
+var end = 100;
+var step = 1;
+
+while(start <= end){
+    console.log(start);
+    step++;
+}
+
+
+/////////////////for loop
+/////// print 1 to 100.
+
+for(var i = 1; i <= end; i++){
+    console.log(i);
+}
